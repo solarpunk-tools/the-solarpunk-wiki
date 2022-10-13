@@ -1,3 +1,31 @@
-body {
-    background-color: aquamarine;
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rokkitt', serif;
+    text-decoration: none;
+    color: #000
 }
+html {
+    width: 100vw;
+    background-color: #efe;
+}
+body {
+    max-width: 800px;
+    margin: auto;
+}
+img {
+    height: 100%;
+    width: min(100%, 800px);
+    border-radius: 4px;
+}
+a:hover{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none
+}
+a:before { content: "{" }
+a:after { content: "}" }
+a[href*='//']:before{ content: "[" }
+a[href*='//']:after{ content: "]" }
