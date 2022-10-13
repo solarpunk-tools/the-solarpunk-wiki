@@ -9,7 +9,7 @@
 }
 html {
     width: 100vw;
-    background-color: #efe;
+    background-color: rgb(238, 241, 255);
 }
 body {
     max-width: 800px;
