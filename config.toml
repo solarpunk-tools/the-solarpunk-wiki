@@ -1,8 +1,8 @@
 # The URL the site will be built for
-base_url = "https://example.com"
+base_url = "https://solarpunkwiki.com"
 
 # Whether to automatically compile all Sass files in the sass directory
-compile_sass = true
+compile_sass = false
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
