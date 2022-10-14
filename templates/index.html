@@ -1,29 +1,37 @@
+{% set tech_link = "#" %}
+{% set ecology_link = "#" %}
+{% set philosophy_link = "#" %}
+{% set artistry_link = "#" %}
+
 <!DOCTYPE html>
 <html>
     <head>
         <title>Index</title>
-        <link href="/style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
     </head>
     <body>
         <table style="margin: auto;">
             <tr>
-                <th style="padding-right: 20px;">
-                    <h3><a href="#">Technology</a></h3>
-                    <img src="images/technologythumbnail.png">
-                </th>
                 <th>
-                    <h3><a href="#">Ecology</a></h3>
-                    <img src="images/ecologythumbnail.png">
+                    <h3><a href={{ tech_link }}>Technology</a></h3>
+                    <a href={{ tech_link }} class="nobracket"><img src="images/technologythumbnail.png" ></a>
+                </th>
+                <th style="width: 20px;"></th>
+                <th>
+                    <h3><a href={{ ecology_link }}>Ecology</a></h3>
+                    <a href={{ ecology_link }} class="nobracket"><img src="images/ecologythumbnail.png"></a>
                 </th>
             </tr>
+            <tr style="height: 10px;"></tr>
             <tr>
-                <th style="padding-right: 20px; padding-top: 10px;">
-                    <h3><a href="#">Philosophy</a></h3>
-                    <img src="images/philosophythumbnail.png">
+                <th>
+                    <h3><a href={{ philosophy_link }}>Philosophy</a></h3>
+                    <a href={{ philosophy_link }} class="nobracket"><img src="images/philosophythumbnail.png"></a>
                 </th>
-                <th style="padding-top: 10px">
-                    <h3><a href="#">Artistry</a></h3>
-                    <img src="images/artthumbnail.png">
+                <th style="width: 20px;"></th>
+                <th>
+                    <h3><a href={{ artistry_link }}>Artistry</a></h3>
+                    <a href={{ artistry_link }} class="nobracket"><img src="images/artthumbnail.png"></a>
                 </th>
             </tr>
         </table>
