@@ -7,4 +7,4 @@ sort_by = "title"
 show_contents = true
 +++
 
-![Technology_Banner](technologybanner.png)
+![Technology_Banner](/images/technologybanner.png)
