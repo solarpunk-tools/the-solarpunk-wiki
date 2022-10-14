@@ -3,48 +3,32 @@
 {% set philosophy_link = "#phil" %}
 {% set artistry_link = "#art" %}
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>The Solarpunk Wiki</title>
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-        <header style="margin: 15px; text-align: center;"><a href="/" class="link_nostyle"><img src="images/logo.png"></a></header>
-        <hr style="margin: 20px; margin-top: 0px;">
-        <table style="margin: auto;">
-            <tr>
-                <th>
-                    <h3 class="nomargin"><a href={{ tech_link }}>Technology</a></h3>
-                    <a href={{ tech_link }} class="link_nostyle"><img src="images/technologythumbnail.png"></a>
-                </th>
-                <th style="width: 20px;"></th>
-                <th>
-                    <h3 class="nomargin"><a href={{ ecology_link }}>Ecology</a></h3>
-                    <a href={{ ecology_link }} class="link_nostyle"><img src="images/ecologythumbnail.png"></a>
-                </th>
-            </tr>
-            <tr style="height: 10px;"></tr>
-            <tr>
-                <th>
-                    <h3 class="nomargin"><a href={{ philosophy_link }}>Philosophy</a></h3>
-                    <a href={{ philosophy_link }} class="link_nostyle"><img src="images/philosophythumbnail.png"></a>
-                </th>
-                <th style="width: 20px;"></th>
-                <th>
-                    <h3 class="nomargin"><a href={{ artistry_link }}>Artistry</a></h3>
-                    <a href={{ artistry_link }} class="link_nostyle"><img src="images/artthumbnail.png"></a>
-
-                </th>
-            </tr>
-        </table>
-        <!-- <hr style="margin: 20px;">
-        <img src="images/castleinthesky.jpg"> -->
-        <hr style="margin: 20px; margin-bottom: 0px;">
-        <footer style="padding: 15px;"><nav style="text-align: center;"><b>
-            <a href="about.html">What is this place?</a> ~
-            <a href="https://github.com/solarpunk-tools/the-solarpunk-wiki">Github</a> ~
-            <a href="https://discord.gg/8SRGpwx3Cm">Discord</a>
-        </b></nav></footer>
-    </body>
-</html>
+{% include "partials/header.html" %}
+<table style="margin: auto;">
+    <tr>
+        <th>
+            <h3 class="nomargin"><a href={{ tech_link }}>Technology</a></h3>
+            <a href={{ tech_link }} class="link_nostyle"><img src="images/technologythumbnail.png"></a>
+        </th>
+        <th style="width: 20px;"></th>
+        <th>
+            <h3 class="nomargin"><a href={{ ecology_link }}>Ecology</a></h3>
+            <a href={{ ecology_link }} class="link_nostyle"><img src="images/ecologythumbnail.png"></a>
+        </th>
+    </tr>
+    <tr style="height: 10px;"></tr>
+    <tr>
+        <th>
+            <h3 class="nomargin"><a href={{ philosophy_link }}>Philosophy</a></h3>
+            <a href={{ philosophy_link }} class="link_nostyle"><img src="images/philosophythumbnail.png"></a>
+        </th>
+        <th style="width: 20px;"></th>
+        <th>
+            <h3 class="nomargin"><a href={{ artistry_link }}>Artistry</a></h3>
+            <a href={{ artistry_link }} class="link_nostyle"><img src="images/artthumbnail.png"></a>
+        </th>
+    </tr>
+</table>
+<!-- <hr style="margin: 20px;">
+<img src="images/castleinthesky.jpg"> -->
+{% include "partials/footer.html" %}
