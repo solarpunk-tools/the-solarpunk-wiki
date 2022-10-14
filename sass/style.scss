@@ -40,11 +40,16 @@ a[href*='//'] {
 		content: "]";
 	}
 }
-.nobracket {
+.link_nostyle {
+    &:hover {
+        background-color: unset;
+        color: unset;
+        text-decoration: unset;
+    }
 	&:before {
-		content: "";
+		content: unset;
 	}
 	&:after {
-		content: "";
+		content: unset;
 	}
 }
