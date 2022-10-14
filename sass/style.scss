@@ -7,13 +7,17 @@
 	text-decoration: none;
 	color: #000;
 }
+.nomargin { margin: 0px; }
 html {
 	width: 100vw;
-	background-color: rgb(238, 241, 255);
+	background-color: #eef1ff;
 }
 body {
 	max-width: 600px;
 	margin: auto;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 20px; margin-top: 5px; margin-bottom: 5px;
 }
 img {
 	max-width: 100%;
