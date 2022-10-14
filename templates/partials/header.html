@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>The Solarpunk Wiki</title>
-        <link href="style.css" rel="stylesheet">
+        <title>
+            {% if page.title is defined %}{{ page.title }} | {% endif %}The Solarpunk Wiki
+        </title>
+        <link href="/style.css" rel="stylesheet">
     </head>
     <body>
         <header style="margin: 15px; text-align: center;"><a href="/" class="link_nostyle"><img src="images/logo.png"></a></header>
