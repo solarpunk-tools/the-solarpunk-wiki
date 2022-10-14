@@ -29,3 +29,5 @@ a:before { content: "{" }
 a:after { content: "}" }
 a[href*='//']:before{ content: "[" }
 a[href*='//']:after{ content: "]" }
+.nobracket:before {content: "";}
+.nobracket:after {content: "";}
