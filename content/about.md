@@ -1,6 +1,6 @@
 +++
 title = "About"
-description = "Info on this wiki and the Solarpunk movement"
+description = "Info on this wiki"
 slug = "about"
 +++
 
