@@ -1,39 +1,48 @@
-{% set tech_link = "#" %}
-{% set ecology_link = "#" %}
-{% set philosophy_link = "#" %}
-{% set artistry_link = "#" %}
+{% set tech_link = "#tech" %}
+{% set ecology_link = "#eco" %}
+{% set philosophy_link = "#phil" %}
+{% set artistry_link = "#art" %}
 
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Index</title>
+        <title>The Solarpunk Wiki</title>
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
+        <header style="margin: 15px; text-align: center;"><a href="/" class="link_nostyle"><img src="images/placeholderlogo.png"></a></header>
         <table style="margin: auto;">
             <tr>
                 <th>
-                    <h3><a href={{ tech_link }}>Technology</a></h3>
-                    <a href={{ tech_link }} class="nobracket"><img src="images/technologythumbnail.png" ></a>
+                    <h3 class="nomargin"><a href={{ tech_link }}>Technology</a></h3>
+                    <a href={{ tech_link }} class="link_nostyle"><img src="images/technologythumbnail.png"></a>
                 </th>
                 <th style="width: 20px;"></th>
                 <th>
-                    <h3><a href={{ ecology_link }}>Ecology</a></h3>
-                    <a href={{ ecology_link }} class="nobracket"><img src="images/ecologythumbnail.png"></a>
+                    <h3 class="nomargin"><a href={{ ecology_link }}>Ecology</a></h3>
+                    <a href={{ ecology_link }} class="link_nostyle"><img src="images/ecologythumbnail.png"></a>
                 </th>
             </tr>
             <tr style="height: 10px;"></tr>
             <tr>
                 <th>
-                    <h3><a href={{ philosophy_link }}>Philosophy</a></h3>
-                    <a href={{ philosophy_link }} class="nobracket"><img src="images/philosophythumbnail.png"></a>
+                    <h3 class="nomargin"><a href={{ philosophy_link }}>Philosophy</a></h3>
+                    <a href={{ philosophy_link }} class="link_nostyle"><img src="images/philosophythumbnail.png"></a>
                 </th>
                 <th style="width: 20px;"></th>
                 <th>
-                    <h3><a href={{ artistry_link }}>Artistry</a></h3>
-                    <a href={{ artistry_link }} class="nobracket"><img src="images/artthumbnail.png"></a>
+                    <h3 class="nomargin"><a href={{ artistry_link }}>Artistry</a></h3>
+                    <a href={{ artistry_link }} class="link_nostyle"><img src="images/artthumbnail.png"></a>
+
                 </th>
             </tr>
         </table>
+        <hr style="margin: 20px;">
+        <img src="images/castleinthesky.jpg">
+        <hr style="margin: 20px; margin-bottom: 0px;">
+        <footer style="padding: 10px;"><nav style="text-align: center;">
+            <a href="https://github.com/solarpunk-tools/the-solarpunk-wiki">Github</a> ~
+            <a href="https://discord.gg/8SRGpwx3Cm">Discord</a>
+        </nav></footer>
     </body>
 </html>
