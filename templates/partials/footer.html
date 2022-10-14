@@ -1,6 +1,8 @@
         <hr style="width: 100%; margin-top: 20px;">
         <footer style="padding: 15px;"><nav style="text-align: center;"><b>
+            {% if page.title is not defined or page.title != "About" %}
             <a href="about">What is this place?</a> ~
+            {% endif %}
             <a href="https://github.com/solarpunk-tools/the-solarpunk-wiki">Github</a> ~
             <a href="https://discord.gg/8SRGpwx3Cm">Discord</a>
         </b></nav></footer>
