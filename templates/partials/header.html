@@ -2,10 +2,27 @@
 <html>
     <head>
         <title>
-            {% if page.title is defined %}{{ page.title }} | {% endif %}The Solarpunk Wiki
+            {% if page.title is defined %}{{ page.title }} | 
+            {% elif section.title is defined and section.title != "Home" %}{{ section.title }} | 
+            {% endif %}The Solarpunk Wiki
         </title>
         <link href="/style.css" rel="stylesheet">
     </head>
     <body>
-        <header style="margin: 15px; text-align: center;"><a href="/" class="link_nostyle"><img src="/images/logo.png"></a></header>
+        <header style="margin: 15px; text-align: center;"><a href="/" class="link_nostyle"><img src="/images/logo.png"></a>
+            <h5 class="nomargin" style="margin-top: 15px;">
+
+                {% if page.ancestors is defined %}
+                    {% set ancestors_array = page.ancestors %}
+                {% elif section.ancestors is defined %}
+                    {% set ancestors_array = section.ancestors %}
+                {% endif %}
+
+                {% for ancestor in ancestors_array %}
+                    {% set parent_section = get_section(path=ancestor) %}
+                    / <a href="{{ parent_section.path }}">{{ parent_section.title }}</a> 
+                {% endfor %}
+
+            </h5>
+        </header>
         <hr style="width: 100%; margin-bottom: 20px;">
