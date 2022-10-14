@@ -1,7 +1,29 @@
 {% include "partials/header.html" %}
+
 <h1 style="font-size: 2.5em; text-align: center; margin-bottom: 0px;">{{ section.title }}</h1>
-<!-- <hr style="width: 30%; margin: auto; margin-bottom: 30px;"> -->
+<hr style="width: 30%; margin: auto; margin-bottom: 30px;">
+
 {% block main_content %}
     {{ section.content | safe}}
 {% endblock main_content %}
+
+{% if section.extra.show_contents is defined and section.extra.show_contents == true %}
+
+    {% if section.pages | first != "" %}
+        <h2 style="margin-bottom: 0px;">---- Pages ----</h2>
+        {% for child_page in section.pages %}
+            <p><a href="{{ child_page.path }}">{{ child_page.title }}</a>: {{ child_page.description }}</p>
+        {% endfor %}
+    {% endif %}
+
+    {% if section.subsections | first != "" %}
+        <h2 style="margin-bottom: 0px;">---- Topics ----</h2>
+        {% for subsection in section.subsections %}
+            {% set child_section = get_section(path=subsection) %}
+            <p><a href="{{ child_section.path }}">{{ child_section.title }}</a>: {{ child_section.description }}</p>
+        {% endfor %}
+    {% endif %}
+
+{% endif %}
+
 {% include "partials/footer.html" %}
