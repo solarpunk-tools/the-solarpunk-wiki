@@ -12,7 +12,7 @@
     {% if section.pages | first != "" %}
         <h2 style="margin-bottom: 0px;">---- Articles ----</h2>
         <p>
-        {% for child_page in section.pages | sort() %}
+        {% for child_page in section.pages %}
         <a href="{{ child_page.path }}">{{ child_page.title }}</a> 
         {% endfor %}
         </p>
@@ -34,7 +34,7 @@
 
     {% if section.pages | first != "" %}
         <h2 style="margin-bottom: 0px;">---- Articles ----</h2>
-        {% for child_page in section.pages | sort() %}
+        {% for child_page in section.pages %}
             <p><a href="{{ child_page.path }}">{{ child_page.title }}</a>: {{ child_page.description }}</p>
         {% endfor %}
     {% endif %}
