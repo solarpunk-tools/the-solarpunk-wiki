@@ -13,21 +13,23 @@
 
 {% if section.extra.show_contents is defined and section.extra.show_contents == "compact" %}
 
+    {% set item_separator = "/" %}
+
     {% if section.pages | first != "" %}
         <h2 style="margin-bottom: 0px;">---- Articles ----</h2>
-        <p>
-        {% for child_page in section.pages %}
-        <a href="{{ child_page.path }}">{{ child_page.title }}</a> 
+        <p>{{ item_separator }}
+        {% for child_page in section.pages %} 
+        <a href="{{ child_page.path }}">{{ child_page.title }}</a> {{ item_separator }}
         {% endfor %}
         </p>
     {% endif %}
 
     {% if section.subsections | first != "" %}
         <h2 style="margin-bottom: 0px;">---- Categories ----</h2>
-        <p>/
-        {% for subsection in section.subsections | sort() %}
-            {% set child_section = get_section(path=subsection) %} 
-            <a href="{{ child_section.path }}">{{ child_section.title }}</a> /
+        <p>{{ item_separator }}
+        {% for subsection in section.subsections | sort() %} 
+            {% set child_section = get_section(path=subsection) %}
+            <a href="{{ child_section.path }}">{{ child_section.title }}</a> {{ item_separator }}
         {% endfor %}
         </p>
     {% endif %}
