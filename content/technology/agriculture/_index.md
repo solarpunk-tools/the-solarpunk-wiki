@@ -1,6 +1,6 @@
 +++
 title = "Agriculture"
-description = "Information on various forms of agricultural equipment"
+description = "Technology for growing useful crops"
 slug = "agriculture"
 sort_by = "title"
 +++
