@@ -44,7 +44,7 @@ a[href*='//'] {
 		content: "]";
 	}
 }
-.link_nostyle {
+a.nostyle {
     &:hover {
         background-color: unset;
         color: unset;
