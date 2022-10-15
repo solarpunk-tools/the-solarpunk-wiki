@@ -3,7 +3,6 @@ title = "Artistry"
 description = "An index of art oriented topics on this wiki"
 slug = "artistry"
 [extra]
-show_contents = "detailed"
+show_contents = "compact"
+# banner = ""
 +++
-
-<!-- ![Artistry_Banner](/images/artistrybanner.png) -->
