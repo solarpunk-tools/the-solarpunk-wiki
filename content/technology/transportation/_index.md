@@ -1,5 +1,7 @@
 +++
 title = "Transportation"
-description = "Technology for getting things from one place to another"
+description = "Information on various transportation methods"
 slug = "transportation"
+[extra]
+show_contents = "detailed"
 +++
