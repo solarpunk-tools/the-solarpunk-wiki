@@ -13,8 +13,8 @@ html {
 	background-color: hsl(25, 100%, 97%);
 }
 body {
-	// max-width: 20cm;
-    width: 20cm;
+	max-width: 800px;
+    width: calc(100% - 40px);
 	margin: auto;
 }
 h1, h2, h3, h4, h5, h6, p, ul, li {
